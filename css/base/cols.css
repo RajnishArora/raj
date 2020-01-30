@@ -1,0 +1,64 @@
+.row {
+		display: flex;
+}
+
+.col-1{
+	flex-basis:8.33%;
+	margin: auto;
+}
+
+.col-2{
+	flex-basis:16.66%;
+	margin: auto;
+}
+
+.col-3{
+	flex-basis:25%;
+	margin: auto;
+}
+
+
+.col-4{
+	flex-basis:33.33%;
+	margin: auto;
+}
+
+.col-5{
+	flex-basis:41.66%;
+	margin: auto;
+}
+
+.col-6{
+	flex-basis:50%;
+	margin: auto;
+}
+
+.col-7{
+	flex-basis:58.33%;
+	margin: auto;
+}
+
+.col-8{
+	flex-basis:66.66%;
+	margin: auto;
+}
+
+.col-9{
+	flex-basis:75%;
+	margin: auto;
+}
+
+.col-10{
+	flex-basis:83.33%;
+	margin: auto;
+}
+
+.col-11{
+	flex-basis:91.66%;
+	margin: auto;
+}
+
+.col-12{
+	flex-basis:100%;
+	margin: auto;
+}

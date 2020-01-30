@@ -1,0 +1,85 @@
+
+.single-sidebar {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+	border: 1px solid $darkgray;
+
+	@mixin at690{
+		float: right;
+    	width: 90% ;	
+	}
+
+	&__title {
+		font-size: 1.25rem;
+		background-color: $mediumred;
+		padding: 20px;
+		margin: 20px;
+	}
+
+	&__item{
+		font-size: 1rem;
+		background-color: $lightred;
+		padding: 20px 10px; 	
+		text-align: center;
+		border-radius: 10px;
+
+	}
+	
+	&__item:hover{
+		background-color: $mediumred;
+		color:$mainBlue;
+	}
+
+	&__addtowishList{
+		color: $mainBlue;	
+	}
+
+
+	
+	&__addtowishList:active {
+		background-color: $red;
+	}
+
+	&__buynow{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		white-space: nowrap;
+	}
+
+	&__buynow:active{
+		background-color: $red;	
+	}
+
+	&__addtocart{
+		
+	
+		@mixin atMedium{
+		white-space: nowrap;			
+		}	
+
+	}
+	
+	@mixin atSmallMedium{
+		width: 18%;
+		margin-left: 20px;
+		
+    }
+
+	@mixin atMediumLarge{
+		margin-top: 50px;
+	}
+
+	@mixin atLarge{ 
+    	margin-top: 50px;
+	}
+
+}
+
+.single-addtowishList:hover{
+	color: $blue;
+}

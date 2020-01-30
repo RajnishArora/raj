@@ -1,0 +1,182 @@
+.site-footer {
+  padding: 0.5rem 0 0.5rem 0;
+  /*background-image: linear-gradient(#FFF, #ECECEC);*/
+  background-color: $lightgray; 
+
+
+  p {
+    font-size: .9rem;
+  }
+
+  .headline {
+  
+    color: #666;
+    margin-bottom: .33rem;
+  }
+
+  &__link {
+    color: #999;
+    text-decoration: none;
+
+  }
+
+  &__nowrap{
+     white-space: nowrap;
+  }
+
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+
+  &__inner {
+    border-top: 1px dotted #DEDEDE;
+    padding-top: 3.5rem;
+  }
+
+  &__img{
+    height:50px !important;
+    width: auto; 
+    margin-left: 20px;
+    margin-top: 20px;
+      @mixin atMedium{
+          
+      }  
+   }
+
+  &__copy{
+      @mixin atMedium{
+        padding-top: 100px;
+   }    
+  }
+  
+  &__centre{
+      text-align: center;
+      @mixin atLarge{
+        text-align: left;
+      }
+  }
+
+  &__less-space{
+
+      line-height: 0.75rem;
+      box-sizing: border-box;
+      padding-left: 10%;
+      padding-right: 10%;
+      
+      @mixin atMedium{
+          padding-left: 0;
+          padding-right: 0%;  
+      }   
+  }
+
+  &__paddingatxs{
+    padding-bottom: 20px;
+   @mixin atMedium{
+    padding-bottom: 0;
+   }
+  }
+
+
+  &__mobile{
+    background-color: $lightgray;
+  }
+
+  &__half-left{
+    background-color: $lightgray;
+    opacity: 0.75;
+    text-align: center;
+    width: 100%;
+    line-height: 3rem;
+    margin-top: 0.75rem;
+    cursor: pointer;
+    border-right: 1px solid $darkgray;
+    border-top: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    padding: 0;
+  }
+
+  &__half-right{
+    background-color: $lightgray;
+    opacity: 0.75;
+    text-align: center;
+    width: 100%;
+    line-height: 3rem;
+    margin-top: 0.75rem;
+    cursor: pointer;
+    border-left: 1px solid $darkgray;
+    border-top: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    padding: 0;
+  }
+
+  &__addspace-left{
+    background-color: $lightgray;
+    opacity: 0.75;
+    text-align: center;
+    width: 100%;
+    line-height: 3rem;
+    margin-top: 0.75rem;
+    border-left: 1px solid $darkgray;
+    border-top: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    padding: 0;
+  }
+
+  &__addspace-right{
+    background-color: $lightgray;
+    opacity: 0.75;
+    text-align: center;
+    width: 100%;
+    line-height: 3rem;
+    margin-top: 0.75rem;
+    border-right: 1px solid $darkgray;
+    border-top: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    padding: 0;
+  }
+
+
+  &__half:hover{
+    background-color: $mediumgray;
+  }
+
+  &__select{
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: $lightgray;
+    opacity: 0.75;
+    text-align: center;
+    text-align-last: center;  
+
+  }
+
+  
+  
+  &__select:hover{
+    background-color: $mediumgray; 
+  }
+
+  &__option{
+    text-align: center;
+    text-align-last: center;   
+  }
+
+}
+
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+

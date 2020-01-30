@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.container--narrow {
+  max-width: 960px;
+}
+
+
+.flex-container{
+    display: flex;
+    max-width: 1920px;
+    padding: 0 16px;
+
+}
+
+.section-break {
+  border: none;
+  border-top: 1px solid #DDD;
+  margin: 2.5rem 0;
+}
+
+.min-list {
+  padding: 0;
+  margin: 0;
+}
+
+.min-list li {
+  list-style: none;
+}
+
+.p-top-small {padding-top: 1rem}
+.p-top-large {padding-top: 1.6rem}
+.p-bottom-large {padding-bottom: 1.6rem}
+.p-left-small {padding-left: 1rem}
+
+.m-top-small{margin-top: 1rem;}
+.m-top-large{margin-top: 1.6rem;}
+.m-bottom-small{margin-bottom: 1rem;}
+.m-bottom-large{margin-bottom: 1.6rem;}
+
+@mixin atSmall {
+  .p-top-large {padding-top: 3.5rem}
+  .p-bottom-large {padding-bottom: 3.5rem}
+}
+
+.no-margin {margin: 0}
+.nu {text-decoration: none}
+.nu:hover {text-decoration: underline}
+.top-margin{ margin-top: 1.5rem;}
+
+.t-left {text-align: left}
+.t-right {text-align: right}
+.t-center {text-align: center}
+
+.fs-small {font-size: 1.5rem;}
+.fs-medium {font-size: 1.875rem;}
+.fs-large {font-size: 2.225rem;}
+
+.t-small {font-size: .85rem}
+
+.float-left {float: left}
+.float-right {float: right}
+.push-right {margin-right: 20px}
+
+
+.container:before,
+.container:after,
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.container:after,
+.group:after {
+  clear: both;
+}
+
+.clearfloats {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.unhide {
+  display: block;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+label{
+  white-space: nowrap;
+}
+
+.br10{
+  border-radius: 10px;
+}
+
+.small{
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+
+button#search_button {
+    padding: 6px 6px;
+}
+
+i.fa.fa-search {
+  font-size: 1.2rem;
+  padding: 7px 7px;
+}
+
+.w100{
+  width: 100%;
+}
+
+.h300{
+  height: 300px;
+}
+
+.rel{
+    position: relative;
+}
+
+
+@media only screen and (min-width: 576px) {
+    .adjust_gutter_2:first-child {
+      padding-left: 30px;
+      padding-right: 15px;
+  }
+
+  .adjust_gutter_2:last-child {
+      padding-left: 15px;
+      padding-right: 30px;
+  }
+}

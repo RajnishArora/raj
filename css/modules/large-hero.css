@@ -1,0 +1,110 @@
+
+/* Bounce Animation */
+@-webkit-keyframes fadeBounce {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  
+  40% {
+    transform: translateY(0);
+  }
+  
+  55% {
+    transform: translateY(-8px);
+  }
+  
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  85% {
+    transform: translateY(-4px);
+  }
+    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes fadeBounce {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  
+  40% {
+    transform: translateY(0);
+  }
+  
+  55% {
+    transform: translateY(-8px);
+  }
+  
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  85% {
+    transform: translateY(-4px);
+  }
+    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+
+/* End Bounce Animation */
+
+
+
+.large-hero{
+  position: relative;
+ 
+  &__image{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &__content{
+    animation: fadeBounce 2s forwards;
+  -webkit-animation: fadeBounce 2s forwards;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+      @mixin atSmallMedium{
+        left:10%;
+      }
+  }
+
+  &__title{
+    font-size: 1.5rem;
+    @mixin atSmallMedium{
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle{
+    font-size: 1rem;
+    @mixin atSmallMedium{
+      font-size: 1.5rem;
+    }
+  }
+
+  &--shift-right{
+      text-align: end;      
+  }
+}

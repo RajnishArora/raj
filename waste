@@ -1,0 +1,64 @@
+
+  <link rel="icon" type="image/png" href="<?php  echo  get_template_directory_uri(); ?>/images/titlelogo.png " sizes="16x16">
+
+<header>
+  <div class="site-header row">
+    <div class = "site-header__menu-icon ">
+        <div class ="site-header__menu-icon__middle">
+        </div>
+    </div>
+    <div class ="site-header__logo col-4">
+
+    </div>
+    <nav class = "primarynav col-6">
+      <ul class ="primarynav__ul">
+          <li class ="primarynav__lihome"><a href="#"> Home </a> </li>
+          <li class ="primarynav__li"><a href="#"> Blog </a> </li>
+          <li class ="primarynav__li"><a href="#"> About Us </a> </li>
+          <li class ="primarynav__li"><a href="#"> Contact Us </a> </li>
+
+      </ul>
+    </nav>
+    <div class ="col-2">
+    </div>
+
+  </div>
+
+
+</header>
+
+
+
+  li:last-child {
+    padding-right: 0;
+    @mixin atMedium {
+      padding-right: 20px;
+    }
+  }
+
+  a {
+    color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    font-size: .8rem;
+    background-color: rgba($mainBlue, .5);
+
+    @mixin atMedium {
+      font-size: 1rem;
+      padding: 12px 0;
+      background-color: transparent;
+
+      &.is-current-link {
+        color: #fabb69;
+      }
+    }
+  }
+}
+
+@mixin atMedium {
+  list-style: none;
+
+  float: left;
+}
