@@ -158,3 +158,18 @@ i.fa.fa-search {
       padding-right: 30px;
   }
 }
+
+.tpadding20{
+  padding-top: 20px;
+}
+
+.bpadding20{
+  padding-bottom: 20px;
+}
+.rpadding20{
+  padding-right: 20px;
+}
+.lpadding20{
+  padding-left: 20px;
+}
+

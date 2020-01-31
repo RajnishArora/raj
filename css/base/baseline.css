@@ -24,7 +24,7 @@
 }
 
 @define-mixin atMediumLarge {
-  @media (min-width: 1131px) {
+  @media (min-width: 1000px) {
     @mixin-content;
   }
 }

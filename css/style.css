@@ -10,16 +10,17 @@
 @import "base/utility-classes";
 @import "base/cols";
 
+@import "modules/raj-animations";
 @import "modules/primarynav";
 @import "modules/site-header";
 @import "modules/large-hero";
-@import "modules/bounce-animation";
-
+@import "modules/about-me";
+@import "modules/btn";
 
 /* BEM Blocks  */
 /*
 @import "modules/acf-map";
-@import "modules/btn";
+
 @import "modules/site-header";
 @import "modules/site-footer";
 @import "modules/page-banner";

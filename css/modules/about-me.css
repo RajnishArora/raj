@@ -1,0 +1,54 @@
+
+
+.about-me{
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	justify-content: center;
+	align-items: center;
+
+	@mixin atMediumLarge{
+		flex-direction: row;
+		align-items:stretch;
+	}
+
+	&__img{
+		animation: comeFromLeft 1s forwards;
+	    
+	  -webkit-animation: comeFromLeft 1s forwards;
+
+		flex-basis: 50%;
+		margin: auto;
+		@mixin atMediumLarge{
+			float:right;	
+			padding-right: 20px;
+		}
+		
+	}
+
+	&__content{
+		animation: comeFromRight 1s forwards;
+		  -webkit-animation: comeFromRight 1s forwards;
+		flex-basis: 40%;
+		float:left;
+		display: flex;
+		flex-direction: column;
+		padding: 0 40px;
+	}
+
+	&__content__heading{
+		text-align: center;
+		font-size: 4rem;
+	}
+
+	&__content__subheading{
+		animation-delay: 1s;
+		animation: bounce 3s forwards;
+		font-size: 2rem;
+	}
+
+
+	&__sidebar{
+		flex-basis: 10%;
+	}
+}
