@@ -10,10 +10,12 @@ import $ from 'jquery';
 //import slick from 'slick-carousel';
 
 import MobileMenu from './modules/MobileMenu';
+import AnimateOnScroll from './modules/AnimateOnScroll';
 
 // Our modules / classes
 
 var mobileMenu = new MobileMenu();
+var animateOnScroll = new AnimateOnScroll();
 
 
 

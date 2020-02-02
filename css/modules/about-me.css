@@ -1,6 +1,10 @@
 
 
 .about-me{
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	margin-top: -5px;
 	display: flex;
 	flex-direction: column;
 	padding-top: 30px;
@@ -13,12 +17,9 @@
 	}
 
 	&__img{
-		animation: comeFromLeft 1s forwards;
-	    
-	  -webkit-animation: comeFromLeft 1s forwards;
-
 		flex-basis: 50%;
 		margin: auto;
+		opacity: 0;
 		@mixin atMediumLarge{
 			float:right;	
 			padding-right: 20px;
@@ -26,14 +27,25 @@
 		
 	}
 
+	&__img-animate{
+		opacity: 1;
+		animation: comeFromLeft 1s forwards;
+ 	  -webkit-animation: comeFromLeft 1s forwards;
+	}
+
 	&__content{
-		animation: comeFromRight 1s forwards;
-		  -webkit-animation: comeFromRight 1s forwards;
+		opacity: 0;
 		flex-basis: 40%;
 		float:left;
 		display: flex;
 		flex-direction: column;
 		padding: 0 40px;
+	}
+
+	&__content-animate{
+		opacity: 1;
+		animation: comeFromRight 1s forwards;
+		  -webkit-animation: comeFromRight 1s forwards;
 	}
 
 	&__content__heading{
@@ -42,8 +54,7 @@
 	}
 
 	&__content__subheading{
-		animation-delay: 1s;
-		animation: bounce 3s forwards;
+		
 		font-size: 2rem;
 	}
 

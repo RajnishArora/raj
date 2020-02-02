@@ -1,4 +1,37 @@
 
+    this.contentToLook.each(function() {
+      var currentItemC = this;
+      new Waypoint({
+        element: currentItemC,
+        handler: function() {
+           $(currentItemC).addClass("about-me__content-animate");
+        },
+        offset: that.offsetPercentage
+      });
+    });
+
+        this.imgToLook.each(function() {
+      var currentItem = this;
+      new Waypoint({
+        element: currentItem,
+        handler: function() {
+           $(currentItem).addClass("about-me__img-animate");
+        },
+        offset: that.offsetPercentage
+      });
+    });
+
+
+
+new Waypoint({
+        element: this.contentToLoook,
+        handler: function() {
+          $(this.contentToLoook).addClass("about-me__content-animate");
+        },
+        offset: this.offsetPercentage
+      });
+    
+
   <link rel="icon" type="image/png" href="<?php  echo  get_template_directory_uri(); ?>/images/titlelogo.png " sizes="16x16">
 
 <header>

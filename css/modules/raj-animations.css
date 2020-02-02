@@ -70,7 +70,7 @@
 
 /* End Bounce Animation */
 
-@keyframes bounce{
+@keyframes onlyBounceY{
 
 	0%{
 		transform: translateY(4px);
@@ -93,3 +93,98 @@
 	}
 
 }
+
+@-webkit-keyframes onlyBounceY{
+
+  0%{
+    transform: translateY(4px);
+  }
+
+  20%{
+    transform: translateY(0px);
+  }
+  40%{
+    transform: translateY(3px);
+  }
+  60%{
+    transform: translateY(0px);
+  }
+  80%{
+    transform: translateY(2px);
+  }
+  100%{
+    transform: translateY(0px); 
+  }
+
+}
+
+
+
+
+/* Bounce Animation */
+@-webkit-keyframes fadeBounce {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  
+  40% {
+    transform: translateY(0);
+  }
+  
+  55% {
+    transform: translateY(-8px);
+  }
+  
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  85% {
+    transform: translateY(-4px);
+  }
+    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes fadeBounce {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  
+  40% {
+    transform: translateY(0);
+  }
+  
+  55% {
+    transform: translateY(-8px);
+  }
+  
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  85% {
+    transform: translateY(-4px);
+  }
+    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+
+/* End Bounce Animation */
+
+
