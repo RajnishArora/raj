@@ -1,0 +1,33 @@
+@keyframes progressbar{
+	0% {
+  
+    transform: translateX(0);
+  }
+
+  100% {
+  	transform: translateX(100%);	
+  }
+  
+}
+
+
+.knowledge{
+	padding: 50px;
+
+	&__line{
+		width: 80%;
+		background-color: $darkgray;
+		height: 30px;
+	
+	}
+
+	&__line::after{
+		animation: progressbar 2s forwards;
+		content: '';
+		width:80%;
+		height: 30px;
+		line-height: 30px;
+		color: $mainBlue;
+			
+	}
+}

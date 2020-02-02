@@ -7,10 +7,29 @@ class AnimateOnScroll {
     //console.log(this.imgToLook);
     this.contentToLook = $(".about-me__content");
     this.offsetPercentage = "50%";
+    this.jsprogress = $("#jsprogress");
+    this.progressval = this.jsprogress.val(); 
+    this.jsprogress.val("0");
+    this.count = 0;
+    //this.jsprogress.value=0;
     this.createWaypoints();
   }
 
+
+    showprogress(count,that){
+          if (count < that.progressval) {
+                    that.jsprogress.val(count);
+                    count++;
+                    console.log(count);
+                    
+                    setTimeout(function(){ that.showprogress(count,that) }, 10);
+                               
+             }
+
+    }
+
     createWaypoints() {
+    
     var that = this;
 
      this.imgToLook.each(function() {
@@ -36,6 +55,22 @@ class AnimateOnScroll {
       });
     });
 
+      
+
+    new Waypoint({
+        element: this.jsprogress[0],
+        handler: function(){
+            that.showprogress(that.count,that);
+            //console.log(that.progressval);
+            //console.log(that.jsprogress.val());
+      
+        },
+        offset:"90%"
+    });
+
+/*
+ 
+*/
   }
 
 /*

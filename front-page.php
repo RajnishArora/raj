@@ -51,13 +51,8 @@
 
 </div>
 
-<div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Odio pellentesque diam volutpat commodo sed egestas. Duis at consectetur lorem donec massa sapien. Aliquam ultrices sagittis orci a scelerisque purus semper. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Velit dignissim sodales ut eu sem integer. Et ligula ullamcorper malesuada proin libero nunc consequat. Non diam phasellus vestibulum lorem sed risus ultricies. Et netus et malesuada fames ac turpis egestas. Vulputate enim nulla aliquet porttitor. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Natoque penatibus et magnis dis parturient. Enim sed faucibus turpis in. Diam sollicitudin tempor id eu nisl nunc mi.
-  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Odio pellentesque diam volutpat commodo sed egestas. Duis at consectetur lorem donec massa sapien. Aliquam ultrices sagittis orci a scelerisque purus semper. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Velit dignissim sodales ut eu sem integer. Et ligula ullamcorper malesuada proin libero nunc consequat. Non diam phasellus vestibulum lorem sed risus ultricies. Et netus et malesuada fames ac turpis egestas. Vulputate enim nulla aliquet porttitor. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Natoque penatibus et magnis dis parturient. Enim sed faucibus turpis in. Diam sollicitudin tempor id eu nisl nunc mi.
-  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Odio pellentesque diam volutpat commodo sed egestas. Duis at consectetur lorem donec massa sapien. Aliquam ultrices sagittis orci a scelerisque purus semper. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Velit dignissim sodales ut eu sem integer. Et ligula ullamcorper malesuada proin libero nunc consequat. Non diam phasellus vestibulum lorem sed risus ultricies. Et netus et malesuada fames ac turpis egestas. Vulputate enim nulla aliquet porttitor. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Natoque penatibus et magnis dis parturient. Enim sed faucibus turpis in. Diam sollicitudin tempor id eu nisl nunc mi.
-  
+<div class ="row knowledge">
+   <progress id="jsprogress" value="90" max="100"></progress>
 </div>
 
 
