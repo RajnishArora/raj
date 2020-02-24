@@ -1,0 +1,56 @@
+.achievements{
+	padding: 30px 30px;
+	text-align: center;
+	@mixin atSmallMedium{
+			padding: 30px 50px;
+		
+	}
+
+
+	&__title{
+		font-size: 2rem;
+		@mixin atSmallMedium{
+			padding: 30px 0;
+			font-size: 3rem;
+			font-weight: 500;
+		}
+	}
+
+	&__content{
+
+		@mixin atSmallMedium{
+			justify-content: space-evenly;
+		}	
+	}
+
+	&__icon-container{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		padding: 20px 0;
+		flex-basis: 50%;
+		
+	}
+
+	&__icon{
+		width: 64px;
+		height: 64px;
+		margin: auto;
+	}
+
+
+
+	&__icon-text{
+		margin-top: 20px;
+		font-size: 1.2rem;
+	}
+
+	&__hide_in_mobile{
+		display: none;
+		@mixin atSmallMedium{
+			display: flex;
+		}	
+	}
+
+}

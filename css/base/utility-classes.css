@@ -22,6 +22,7 @@ img {
 
 .container--narrow {
   max-width: 960px;
+  margin-top: 80px;
 }
 
 
@@ -51,9 +52,10 @@ img {
 .p-top-large {padding-top: 1.6rem}
 .p-bottom-large {padding-bottom: 1.6rem}
 .p-left-small {padding-left: 1rem}
+.p-right-small{padding-right: 1rem}
 
 .m-top-small{margin-top: 1rem;}
-.m-top-large{margin-top: 1.6rem;}
+.m-top-large{margin-top: 5rem;}
 .m-bottom-small{margin-bottom: 1rem;}
 .m-bottom-large{margin-bottom: 1.6rem;}
 
@@ -173,3 +175,7 @@ i.fa.fa-search {
   padding-left: 20px;
 }
 
+
+.pull-right{
+  text-align: right;
+}

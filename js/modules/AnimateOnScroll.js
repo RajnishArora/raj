@@ -7,23 +7,30 @@ class AnimateOnScroll {
     //console.log(this.imgToLook);
     this.contentToLook = $(".about-me__content");
     this.offsetPercentage = "50%";
-    this.jsprogress = $("#jsprogress");
-    this.progressval = this.jsprogress.val(); 
-    this.jsprogress.val("0");
+    this.jsprogress1 = $("#jsprogress1");
+    this.jsprogress2 = $("#jsprogress2");
+    this.jsprogress3 = $("#jsprogress3");
+    this.jsprogress4 = $("#jsprogress4");
+    this.jsprogress5 = $("#jsprogress5");
+    this.jsprogress6 = $("#jsprogress6");
+  //  alert(this.jsprogress[0]);
+  //  this.progressval = this.jsprogress.val(); 
+  //  this.jsprogress.val("0");
+    this.ourprojectsboxes = $(".our-projects__boxes")
     this.count = 0;
+    this.iteration = 0;
+    this.executed = false;
+    
     //this.jsprogress.value=0;
     this.createWaypoints();
   }
 
-
-    showprogress(count,that){
-          if (count < that.progressval) {
-                    that.jsprogress.val(count);
+    showprogress(count,limit,progressElement,that){
+          if (count < limit) {
+                    progressElement.val(count);
                     count++;
-                    console.log(count);
-                    
-                    setTimeout(function(){ that.showprogress(count,that) }, 10);
-                               
+                    //console.log(count);
+                    setTimeout(function(){ that.showprogress(count,limit,progressElement,that)  }, 10);
              }
 
     }
@@ -32,63 +39,127 @@ class AnimateOnScroll {
     
     var that = this;
 
-     this.imgToLook.each(function() {
+      new Waypoint({
+        element: that.imgToLook[0],
+        handler: function() {
+           that.imgToLook.addClass("about-me__img-animate");
+        },
+        offset: that.offsetPercentage
+      });
+  
+
+      
+      //if (that.executed == false) {
+      new Waypoint({
+        element: that.contentToLook[0],
+        handler: function() {
+           that.contentToLook.addClass("about-me__content-animate");
+        },
+        offset: that.offsetPercentage
+      });
+    
+
+      this.count=0;
+      var limit1 = that.jsprogress1.data("limit1");
+      var progressElement1 = that.jsprogress1; 
+      new Waypoint({
+          element:that.jsprogress1[0],
+          handler:function(){
+              that.showprogress(that.count,limit1,progressElement1,that);
+          },
+         offset: "90%" 
+
+      });
+     
+     this.count=0;
+     var limit2 = that.jsprogress2.data("limit2");
+      var progressElement2 = that.jsprogress2; 
+      new Waypoint({
+          element:that.jsprogress2[0],
+          handler:function(){
+              that.showprogress(that.count,limit2,progressElement2,that);
+          },
+         offset: "90%" 
+
+      });
+
+      this.count=0;
+      var limit3 = that.jsprogress3.data("limit3");
+      var progressElement3 = that.jsprogress3; 
+      new Waypoint({
+          element:that.jsprogress3[0],
+          handler:function(){
+              that.showprogress(that.count,limit3,progressElement3,that);
+          },
+         offset: "90%" 
+
+      });
+
+      this.count=0;
+      var limit4 = that.jsprogress4.data("limit4");
+      var progressElement4 = that.jsprogress4; 
+      new Waypoint({
+          element:that.jsprogress4[0],
+          handler:function(){
+              that.showprogress(that.count,limit4,progressElement4,that);
+          },
+         offset: "90%" 
+
+      });
+
+      this.count=0;
+      var limit5 = that.jsprogress5.data("limit5");
+      var progressElement5 = that.jsprogress5; 
+      new Waypoint({
+          element:that.jsprogress5[0],
+          handler:function(){
+              that.showprogress(that.count,limit5,progressElement5,that);
+          },
+         offset: "90%" 
+
+      });
+
+      this.count=0;
+      var limit6 = that.jsprogress6.data("limit6");
+      var progressElement6 = that.jsprogress6; 
+      new Waypoint({
+          element:that.jsprogress6[0],
+          handler:function(){
+              that.showprogress(that.count,limit6,progressElement6,that);
+          },
+         offset: "90%" 
+
+      });
+
+     // that.executed = true;
+     // }  // ! executed
+      
+/*
+    this.jsprogress.each(function() {
       var currentItem = this;
+      currentItem.count = 0;
+      var limit = currentItem.value;
+      //console.log(limit);
+      currentItem.value=0;
+      //
+      //var progressvalue = this.value;
       new Waypoint({
         element: currentItem,
         handler: function() {
-           $(currentItem).addClass("about-me__img-animate");
+           //that.showprogress(currentItem.count,limit,that.iteration,that);
+           console.log(that.iteration);
         },
-        offset: that.offsetPercentage
+        offset: "90%"
       });
+
+      that.iteration++;
     });
+  */  
 
 
-    this.contentToLook.each(function() {
-      var currentItemC = this;
-      new Waypoint({
-        element: currentItemC,
-        handler: function() {
-           $(currentItemC).addClass("about-me__content-animate");
-        },
-        offset: that.offsetPercentage
-      });
-    });
+  }  // create waypoints ends
 
-      
 
-    new Waypoint({
-        element: this.jsprogress[0],
-        handler: function(){
-            that.showprogress(that.count,that);
-            //console.log(that.progressval);
-            //console.log(that.jsprogress.val());
-      
-        },
-        offset:"90%"
-    });
-
-/*
- 
-*/
-  }
-
-/*
-  createWaypoints() {
-      var that = this;
-      var currentItem = this.imageToLook;
-      new Waypoint({
-        element: currentItem,
-        handler: function() {
-          console.log(this);
-          console.log(that);
-          //$(this).addClass("about-me__img-animate");
-        },
-        offset: that.offsetPercentage
-      });
-      
-  }
-  */
 }
 
 export default AnimateOnScroll;

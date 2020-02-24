@@ -1,3 +1,52 @@
+<div class="generic__title" style="background-image: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/title_background.jpg'); ">
+    
+
+&__boxes:first-of-type{
+    animation: comeFromLeft 2s forwards;
+    -webkit-animation: comeFromLeft 2s forwards;
+  }
+
+  &__boxes:last-of-type{
+    animation: comeFromRight 2s forwards;
+    -webkit-animation: comeFromRight 2s forwards;
+  }
+
+  &__boxes:nth-of-type(2){
+    animation: fadeBounce 2s forwards;
+    -webkit-animation: fadeBounce 2s forwards;
+  }
+
+for(i = 0; i < $(".blog-post").length; i++) { 
+  $(".blog-post:eq(" + i  + ")").append("<p>Here's a note</p>");
+}
+
+/*
+     this.imgToLook.each(function() {
+      var currentItem = this;
+      new Waypoint({
+        element: currentItem,
+        handler: function() {
+           $(currentItem).addClass("about-me__img-animate");
+        },
+        offset: that.offsetPercentage
+      });
+    });
+
+    
+    this.contentToLook.each(function() {
+      var currentItemC = this;
+      new Waypoint({
+        element: currentItemC,
+        handler: function() {
+           $(currentItemC).addClass("about-me__content-animate");
+        },
+        offset: that.offsetPercentage
+      });
+    });
+
+
+
+*/
 
     this.contentToLook.each(function() {
       var currentItemC = this;
@@ -32,6 +81,21 @@ new Waypoint({
       });
     
 
+
+
+    var i=0;
+    for (var i =  0; i < this.jsprogress.length; i++) {
+        var limit = this.jsprogress[i].value;
+        new Waypoint({
+            element:that.jsprogress[i],
+            handler: function(){
+                //that.showprogress(0,limit,i,that)
+                console.log(i);
+            },
+            offset:"90%"
+
+        });  
+    }
   <link rel="icon" type="image/png" href="<?php  echo  get_template_directory_uri(); ?>/images/titlelogo.png " sizes="16x16">
 
 <header>

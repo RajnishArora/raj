@@ -4,17 +4,20 @@
  
   &__image{
     width: 100%;
+    
     max-width: 100%;
+    @mixin atSmallMedium{
+        height: 100vh;
+      }
   }
 
   &__content{
     animation: fadeBounce 2s forwards;
-  -webkit-animation: fadeBounce 2s forwards;
+    -webkit-animation: fadeBounce 2s forwards;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
-    color: white;
     display: flex;
     flex-direction: column;
       @mixin atSmallMedium{

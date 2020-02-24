@@ -23,6 +23,7 @@
         &--active{
           opacity: 1;
           left: 0;
+          background-color: #fff;
           z-index: 9;
         }
     }
@@ -34,7 +35,7 @@
     }
 
       &__li{
-          color: #fff;
+          
           list-style: none;
           @mixin atSmallMedium{
               padding:0 20px;
@@ -44,9 +45,17 @@
 
       a{
         text-decoration: none;
-        color: #fff;
+        color: #000;
         font-size: 1rem;
         font-family: cursive;
         font-weight: 300;
+
+        @mixin atSmallMedium{
+            font-size: 1.5rem;
+        }
+
+      }
+      a:hover{
+        color: $mainBlue;
       }
 }

@@ -1,0 +1,60 @@
+.our-projects{
+	padding: 30px 10%;
+	
+	&__boxes{
+		flex-basis: 33.33%;
+		padding: 20px;
+		margin: 20px;
+		border: 1px solid;
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+	}
+
+	&__boxes:hover{
+		transform: scale(1.1);
+	}
+
+	&__boxes-left{
+    animation: comeFromLeft 2s forwards;
+    -webkit-animation: comeFromLeft 2s forwards;
+  	}
+
+	  &__boxes-last{
+	    animation: comeFromRight 2s forwards;
+	    -webkit-animation: comeFromRight 2s forwards;
+	  }
+
+	  &__boxes-middle{
+	    animation: fadeBounce 2s forwards;
+	    -webkit-animation: fadeBounce 2s forwards;
+	  }
+
+
+
+
+		&__title{
+			text-align: center;
+			font-size: 2rem;
+			@mixin atSmallMedium{
+				padding: 10px 0;
+				font-size: 3rem;
+				font-weight: 500;
+			}
+		}
+
+		&__content{
+			padding: 0 20px;
+			font-size: 1.1rem;
+			font-weight: 300;
+			
+		}
+
+		&__boxes-title{
+			text-align: center;
+			font-size: 1.5rem;
+			@mixin atSmallMedium{
+				padding: 10px 0;
+				font-size: 2.5rem;
+				font-weight: 400;
+			}
+		}
+}

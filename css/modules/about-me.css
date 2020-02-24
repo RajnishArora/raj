@@ -30,7 +30,7 @@
 	&__img-animate{
 		opacity: 1;
 		animation: comeFromLeft 1s forwards;
- 	  -webkit-animation: comeFromLeft 1s forwards;
+ 	  	-webkit-animation: comeFromLeft 1s forwards;
 	}
 
 	&__content{

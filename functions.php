@@ -136,3 +136,29 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+add_action('init', 'raj_projects_post_types');
+function raj_projects_post_types() {
+  register_post_type('projects', array(
+    'supports' => array('title','editor'),
+    'public' => false,
+    'show_ui' => true,
+    'labels' => array(
+      'name' => 'Projects',
+      'add_new_item' => 'Add New Project',
+      'edit_item' => 'Edit Project',
+      'all_items' => 'All Projects',
+      'singular_name' => 'Project'
+    ),
+    'menu_icon' => 'dashicons-list-view'
+  ));
+}
+
+
+add_action( 'after_switch_theme', 'my_rewrite_flush' );
+function my_rewrite_flush() {
+    raj_projects_post_types();
+    flush_rewrite_rules();
+}
+

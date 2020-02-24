@@ -32,10 +32,10 @@
 
       <nav class = "primarynav">
         <ul class ="primarynav__ul">
-            <li class ="primarynav__li"><a href="#"> Home </a> </li>
-            <li class ="primarynav__li"><a href="#"> Blog </a> </li>
-            <li class ="primarynav__li"><a href="#"> About Us </a> </li>
-            <li class ="primarynav__li"><a href="#"> Contact Us </a> </li>
+            <li class = "primarynav__li <?php if(is_page('home')) echo 'current-menu-item' ?>" ><a href="<?php _e(site_url()); ?>"  > Home </a> </li>
+            <li class ="primarynav__li"><a href="<?php _e(site_url('/blog')); ?>"> Blog </a> </li>
+            <li class ="primarynav__li"><a href="<?php _e(site_url('#aboutme')); ?>"> About Us </a> </li>
+            <li class ="primarynav__li"><a href="<?php _e(site_url('/contact-us')); ?>"> Contact Us </a> </li>
 
         </ul>
       </nav>

@@ -1,14 +1,19 @@
-<?php get_header();
+<?php 
+/*
+Template Name:Home Page
+*/
+
+get_header();
 
 //animation working but content not centre as translateY not working
 ?>
 
 <div class="large-hero">
 	<picture>
-      <source media="(min-width: 1380px)" srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/laptop-1920.jpg">
-      <source srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/laptop-1380.jpg" media="(min-width: 990px)">
-      <source srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/laptop-990.jpg" media="(min-width: 640px)">
-      <img srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/laptop-640" alt="Coastal view of ocean and mountains" class="large-hero__image">
+      <source media="(min-width: 1380px)" srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/computer-desk-1920.png">
+      <source srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/computer-desk-1380.png" media="(min-width: 990px)">
+      <source srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/computer-desk-990.png" media="(min-width: 640px)">
+      <img srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/computer-desk-640.jpg" alt="Coastal view of ocean and mountains" class="large-hero__image">
     </picture>
 
 		<div class = "large-hero__content">
@@ -19,7 +24,7 @@
 		</div>
 </div>
 
-<div class ="about-me" style="background-image: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/background-cement-concrete-paint-242236.jpg');">
+<div id= "aboutme"  class ="about-me" style="background-image: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/white-wall.jpg');">
     
     <picture>
           <source media="(min-width: 990px)" srcset="<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/silhoutte-500.jpg">
@@ -38,11 +43,9 @@
       </div>    
       <div class="tpadding20 bpadding20">
           <a href="#" class="btn btn--blue rpadding20">
-              Hire Me
-          </a>
-          <a href="#" class="btn btn--orange lpadding20">
               Contact Me
           </a>
+          
       </div>
     </div>
 
@@ -51,11 +54,130 @@
 
 </div>
 
-<div class ="row knowledge">
-   <progress id="jsprogress" value="90" max="100"></progress>
+<div class ="knowledge">
+      <div class = knowledge__title>
+            Our Skills
+      </div>
+
+      <div class = knowledge__subtitle>
+          These are our skill level 
+      </div>
+
+    <div class ="row-smd">
+      <div class = "col-md-6">
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">WORDPRESS</div>
+          <progress id="jsprogress1" class="knowledge__progress"  data-limit1 = "90"  max="100"></progress>
+        </div>
+
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">PHP</div>
+          <progress id="jsprogress2" class="knowledge__progress"  data-limit2 = "80" max="100"></progress>
+        </div>
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">JAVASCRIPT</div>
+          <progress id="jsprogress3" class="knowledge__progress"  data-limit3 = "85" max="100"></progress>
+        </div>
+      </div>
+     
+     <div class = "col-md-6">
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">HTML</div>
+          <progress id="jsprogress4" class="knowledge__progress"  data-limit4 = "90" max="100"></progress>
+        </div>
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">CSS</div>
+          <progress id="jsprogress5" class="knowledge__progress"  data-limit5 = "90" max="100"></progress>
+        </div>
+        <div class = "knowledge__item">
+          <div class = "knowledge--left">C++</div>
+          <progress id="jsprogress6" class="knowledge__progress"  data-limit6 = "95" max="100"></progress>
+        </div>
+         
+     </div>
+    </div> <!-- row ends -->     
+</div>
+
+<div class = "achievements " style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/images/white-wall.jpg") no-repeat cover >
+    <div class = "achievements__title" >
+        Our Style
+    </div>
+    <div class ="row achievements__content " >
+        
+        <div class ="achievements__icon-container">
+          <div class ="achievements__icon" style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/icons/css_sprites.png') no-repeat -220px -94px;" >
+          </div>
+          <div class ="achievements__icon-text">
+              Keep Customers happy
+          </div>
+        </div>
+        <div class ="achievements__icon-container">
+          <div class ="achievements__icon" style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/icons/css_sprites.png') no-repeat -115px -115px;">
+          </div>
+          <div class ="achievements__icon-text">
+              On Time Delievery
+          </div>
+        </div>
+        <div class ="achievements__icon-container achievements__hide_in_mobile">
+          <div  class ="achievements__icon" style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/icons/css_sprites.png') no-repeat -115px -10px; width: 85px;height: 85px;">
+          </div>
+          <div class ="achievements__icon-text">
+              Quality Code
+          </div>
+        </div>
+      
+       <div class ="achievements__icon-container achievements__hide_in_mobile">
+          <div class ="achievements__icon" style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/icons/css_sprites.png') no-repeat -220px -10px;" >
+          </div>
+          <div class ="achievements__icon-text">
+              Spped & Performance
+          </div>
+        </div>
+                <div class ="achievements__icon-container">
+          <div class ="achievements__icon" style="background: url('<?php echo bloginfo('stylesheet_directory'); ?>/assets/icons/css_sprites.png') no-repeat -10px -115px; width: 85px;height: 85px;" >
+          </div>
+          <div class ="achievements__icon-text">
+              Resposive Design 
+          </div>
+        </div>
+      </div>
+      
+</div>
+
+<div class="our-projects">
+  <div class = "our-projects__title">
+    Our Projects
+  </div>
+    <div class="row-smd">
+      <?php
+          $args = array(  
+            'post_type' => 'projects',
+            'post_status' => 'publish',
+            'posts_per_page' => 3, 
+             
+        );
+
+          $loop = new WP_Query( $args);
+
+          while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+      
+          <div class ="our-projects__boxes">
+              <div class=" our-projects__boxes-title"> 
+                  <?php _e(the_title());  ?> 
+             
+              </div>
+               <div class ="our-projects__content">
+                    <?php _e(the_content());  ?>
+               </div>
+          </div>    
+          <?php
+             endwhile;
+
+          wp_reset_postdata(); 
+          ?>
+        
+      </div>
 </div>
 
 
-  <?php get_footer();
-
-?>
+  <?php get_footer(); 

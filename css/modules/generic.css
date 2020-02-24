@@ -1,0 +1,36 @@
+.generic {
+		padding:  60px 80px 30px 80px;
+
+	&__title{
+		position: relative;
+		margin-bottom: 20px;
+		padding: 80px 0;
+		@mixin atSmallMedium{
+			
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title-text{
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		@mixin atSmallMedium{
+			font-size: 3rem;
+		
+		}	
+	}
+
+	&__content{
+		 height: calc(100vh - 2rem - 300px);
+		
+	}
+	&__header{
+		position:relative;
+	}
+}
